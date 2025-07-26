@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPen+ | Advanced Biodegradable, Plantable Stationery</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind's slate-50 */
+            color: #1e293b; /* Tailwind's slate-800 */
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; /* Tailwind's slate-300 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; /* Tailwind's slate-400 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://placehold.co/40x40/65a30d/ffffff?text=🌱" alt="PlantPen+ Logo" class="rounded-full">
+                <a href="#" class="text-2xl font-bold text-green-700">PlantPen+</a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#problem" class="text-gray-600 hover:text-green-700 font-medium transition-colors duration-300">Problem</a>
+                <a href="#solution" class="text-gray-600 hover:text-green-700 font-medium transition-colors duration-300">Solution</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-green-700 font-medium transition-colors duration-300">How It Works</a>
+                <a href="#team" class="text-gray-600 hover:text-green-700 font-medium transition-colors duration-300">Team</a>
+                <a href="#contact" class="text-gray-600 hover:text-green-700 font-medium transition-colors duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-green-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="#problem" class="block text-gray-600 hover:text-green-700 font-medium py-2 px-4 rounded-md transition-colors duration-300">Problem</a>
+            <a href="#solution" class="block text-gray-600 hover:text-green-700 font-medium py-2 px-4 rounded-md transition-colors duration-300">Solution</a>
+            <a href="#how-it-works" class="block text-gray-600 hover:text-green-700 font-medium py-2 px-4 rounded-md transition-colors duration-300">How It Works</a>
+            <a href="#team" class="block text-gray-600 hover:text-green-700 font-medium py-2 px-4 rounded-md transition-colors duration-300">Team</a>
+            <a href="#contact" class="block text-gray-600 hover:text-green-700 font-medium py-2 px-4 rounded-md transition-colors duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section id="hero" class="relative bg-gradient-to-br from-green-300 to-green-600 text-white py-20 md:py-32 overflow-hidden rounded-b-3xl shadow-xl">
+            <div class="absolute inset-0 opacity-20 bg-[url('https://placehold.co/1200x800/65a30d/ffffff?text=PlantPattern')] bg-cover bg-center"></div>
+            <div class="container mx-auto px-6 md:px-12 relative z-10 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+                    PlantPen+:<br> Write. Grow. Sustain.
+                </h1>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90">
+                    Advanced Biodegradable, Plantable Stationery for a Greener Tomorrow.
+                </p>
+                <a href="#solution" class="inline-block bg-white text-green-700 hover:bg-green-100 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                    Discover Our Innovation
+                </a>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="problem" class="py-16 md:py-24 bg-white rounded-lg shadow-md mx-4 md:mx-auto mt-8 max-w-6xl">
+            <div class="container mx-auto px-6 md:px-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">The Problem: A Plastic Predicament</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div class="text-left">
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            Every year, billions of conventional pens, made almost entirely of plastic, end up in landfills. These pens take centuries to decompose, contributing significantly to plastic pollution that harms our environment and wildlife.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 text-lg space-y-3">
+                            <li><strong class="text-red-600">95% Plastic:</strong> Conventional pens are overwhelmingly plastic.</li>
+                            <li><strong class="text-red-600">Centuries to Decompose:</strong> They persist in the environment for generations.</li>
+                            <li><strong class="text-red-600">Niche "Eco" Alternatives:</strong> Current plantable options lack robust design, controlled biodegradability, and academic validation.</li>
+                        </ul>
+                        <p class="text-lg text-gray-700 mt-6 leading-relaxed">
+                            There's a critical gap in the market for a scalable, truly sustainable stationery solution that combines advanced materials science, effective seed encapsulation, and comprehensive lifecycle analysis.
+                        </p>
+                    </div>
+                    <div class="flex justify-center">
+                        <!-- Placeholder for an infographic or chart -->
+                        <img src="https://placehold.co/500x350/fca5a5/ffffff?text=Plastic+Waste+Infographic" alt="Plastic Waste Infographic" class="rounded-lg shadow-xl w-full max-w-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="py-16 md:py-24 bg-green-50 rounded-lg shadow-md mx-4 md:mx-auto mt-8 max-w-6xl">
+            <div class="container mx-auto px-6 md:px-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-12">Our Solution: PlantPen+</h2>
+                <p class="text-xl text-gray-700 mb-10 max-w-4xl mx-auto">
+                    We're developing an advanced, holistic stationery ecosystem designed to be truly biodegradable and plantable, transforming waste into life.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-green-200">
+                        <div class="text-5xl mb-4 text-green-600">🌱</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Truly Biodegradable</h3>
+                        <p class="text-gray-700">Crafted from paper composites or agri-waste polymers, designed to break down naturally within defined timelines.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-green-200">
+                        <div class="text-5xl mb-4 text-green-600">✍️</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Plantable Base</h3>
+                        <p class="text-gray-700">Each pen and pencil contains a seed capsule, ready to sprout into herbs or native plants after use.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-green-200">
+                        <div class="text-5xl mb-4 text-green-600">📦</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Holistic Ecosystem</h3>
+                        <p class="text-gray-700">Beyond pens, we offer seedable notebooks, planter packaging, and a biodegradation tracking app.</p>
+                    </div>
+                </div>
+                <div class="mt-12 flex justify-center">
+                    <!-- Placeholder for a product mockup -->
+                    <img src="https://placehold.co/700x400/86efac/ffffff?text=PlantPen+Product+Mockup" alt="PlantPen+ Product Mockup" class="rounded-xl shadow-2xl w-full max-w-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-16 md:py-24 bg-white rounded-lg shadow-md mx-4 md:mx-auto mt-8 max-w-6xl">
+            <div class="container mx-auto px-6 md:px-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">How PlantPen+ Works</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div class="text-left">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Innovative Design & Materials</h3>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            Our pens are engineered for sustainability from the ground up. We utilize cutting-edge materials and design principles to ensure both functionality and environmental responsibility.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 text-lg space-y-3">
+                            <li><strong class="text-green-600">Biodegradable Composites:</strong> Made from paper or agri-waste polymers.</li>
+                            <li><strong class="text-green-600">Integrated Seed Capsule:</strong> Securely embedded in the pen's base, protecting the seeds until planting.</li>
+                            <li><strong class="text-green-600">Enhanced Refill System:</strong> Vegetable-oil coating prevents ink diffusion, ensuring an 18-month shelf life.</li>
+                            <li><strong class="text-green-600">Eco-Conscious Packaging:</strong> Designed to be planter-friendly, completing the lifecycle.</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                        <!-- Placeholder for a diagram showing pen components -->
+                        <img src="https://placehold.co/500x350/d1fae5/10b981?text=PlantPen+Diagram" alt="PlantPen+ Diagram" class="rounded-lg shadow-xl w-full max-w-md">
+                    </div>
+                </div>
+
+                <div class="mt-16 text-left">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4 text-center">The PlantPen+ Journey</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                        <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-md border border-gray-200">
+                            <div class="text-5xl mb-4 text-green-600">1️⃣</div>
+                            <h4 class="text-xl font-semibold mb-2">Write</h4>
+                            <p class="text-gray-700">Use your PlantPen+ just like any other pen, enjoying its smooth writing experience.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-md border border-gray-200">
+                            <div class="text-5xl mb-4 text-green-600">2️⃣</div>
+                            <h4 class="text-xl font-semibold mb-2">Plant</h4>
+                            <p class="text-gray-700">Once the ink is used up, plant the pen's base in soil, either in its packaging or a pot.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center p-6 rounded-xl shadow-md border border-gray-200">
+                            <div class="text-5xl mb-4 text-green-600">3️⃣</div>
+                            <h4 class="text-xl font-semibold mb-2">Grow</h4>
+                            <p class="text-gray-700">Watch as the seeds germinate and grow into a beautiful plant, completing the cycle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Research Components Section -->
+        <section id="research" class="py-16 md:py-24 bg-green-50 rounded-lg shadow-md mx-4 md:mx-auto mt-8 max-w-6xl">
+            <div class="container mx-auto px-6 md:px-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-12">Our Commitment: Technical Research</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-green-200">
+                        <div class="text-4xl mb-3 text-green-600">🔬</div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Material Science</h3>
+                        <p class="text-gray-700 text-sm">Testing agri-fiber composites, coatings, tensile strength, and precise biodegradation rates.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-green-200">
+                        <div class="text-4xl mb-3 text-green-600">🌿</div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Seed Viability</h3>
+                        <p class="text-gray-700 text-sm">Embedding multiple crop seeds and assessing optimal germination post-composting/planting.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-green-200">
+                        <div class="text-4xl mb-3 text-green-600">📊</div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">LCA & Impact</h3>
+                        <p class="text-gray-700 text-sm">Comprehensive Life Cycle Assessment to compare carbon footprint vs. conventional pens.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-green-200">
+                        <div class="text-4xl mb-3 text-green-600">💡</div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Patenting & Novelty</h3>
+                        <p class="text-gray-700 text-sm">Evaluating novelty and exploring integration of seed-biopolymer composites for IP.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-16 md:py-24 bg-white rounded-lg shadow-md mx-4 md:mx-auto mt-8 max-w-6xl">
+            <div class="container mx-auto px-6 md:px-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Meet Our Visionary Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="flex flex-col items-center p-6 rounded-xl shadow-lg border border-gray-200">
+                        <img src="https://placehold.co/150x150/d1fae5/10b981?text=R%26D" alt="Material/R&D Lead" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-green-400">
+                        <h3 class="text-xl font-semibold text-gray-800">Material/R&D Lead</h3>
+                        <p class="text-green-600 text-sm mb-2">Innovation & Development</p>
+                        <p class="text-gray-700 text-center text-sm">Drives experiments on composites, coatings, and ensures product integrity.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 rounded-xl shadow-lg border border-gray-200">
+                        <img src="https://placehold.co/150x150/d1fae5/10b981?text=Bio" alt="Agronomy/Biology Lead" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-green-400">
+                        <h3 class="text-xl font-semibold text-gray-800">Agronomy/Biology Lead</h3>
+                        <p class="text-green-600 text-sm mb-2">Seed & Growth Expert</p>
+                        <p class="text-gray-700 text-center text-sm">Selects viable seeds, conducts plant-growth trials, ensures germination success.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 rounded-xl shadow-lg border border-gray-200">
+                        <img src="https://placehold.co/150x150/d1fae5/10b981?text=Design" alt="Design/Branding Lead" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-green-400">
+                        <h3 class="text-xl font-semibold text-gray-800">Design/Branding Lead</h3>
+                        <p class="text-green-600 text-sm mb-2">Aesthetics & Outreach</p>
+                        <p class="text-gray-700 text-center text-sm">Manages packaging, branding, and strategic outreach to schools and eco-NGOs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prototyping Strategy Section -->
+        <section id="prototyping" class="py-16 md:py-24 bg-green-50 rounded-lg shadow-md mx-4 md:mx-auto mt-8 max-w-6xl">
+            <div class="container mx-auto px-6 md:px-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-12">Our Prototyping Strategy</h2>
+                <div class="relative flex flex-col items-center">
+                    <!-- Timeline Line -->
+                    <div class="absolute hidden md:block w-1 h-full bg-green-400 rounded-full left-1/2 transform -translate-x-1/2"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
+                        <!-- Phase 1 -->
+                        <div class="md:text-right md:pr-16 relative">
+                            <div class="absolute hidden md:block w-8 h-8 bg-green-600 rounded-full -right-4 top-1/2 transform -translate-y-1/2 border-4 border-white shadow-md"></div>
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-3">Phase 1: Bench Trials</h3>
+                            <p class="text-gray-700 text-lg">
+                                Initial experiments with 3 materials and 2 seed types. Focus on ink compatibility and early degradation testing in controlled environments.
+                            </p>
+                        </div>
+                        <!-- Empty div for alignment on desktop -->
+                        <div class="hidden md:block"></div>
+
+                        <!-- Phase 2 -->
+                        <div class="hidden md:block"></div>
+                        <div class="md:text-left md:pl-16 relative">
+                            <div class="absolute hidden md:block w-8 h-8 bg-green-600 rounded-full -left-4 top-1/2 transform -translate-y-1/2 border-4 border-white shadow-md"></div>
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-3">Phase 2: Pilot Batch</h3>
+                            <p class="text-gray-700 text-lg">
+                                Production of 100 units for comprehensive user testing in real-world scenarios like colleges and co-working spaces.
+                            </p>
+                        </div>
+
+                        <!-- Phase 3 -->
+                        <div class="md:text-right md:pr-16 relative">
+                            <div class="absolute hidden md:block w-8 h-8 bg-green-600 rounded-full -right-4 top-1/2 transform -translate-y-1/2 border-4 border-white shadow-md"></div>
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-3">Phase 3: Feedback Loop & Refinement</h3>
+                            <p class="text-gray-700 text-lg">
+                                Collecting and analyzing user feedback to refine the seed mix, optimize shelf life, and prepare for scaling.
+                            </p>
+                        </div>
+                        <div class="hidden md:block"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Strategy & Monetization Section -->
+        <section id="market" class="py-16 md:py-24 bg-white rounded-lg shadow-md mx-4 md:mx-auto mt-8 max-w-6xl">
+            <div class="container mx-auto px-6 md:px-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Market Strategy & Monetization</h2>
+                <p class="text-xl text-gray-700 mb-10 max-w-4xl mx-auto">
+                    We're targeting diverse segments to maximize reach and impact, ensuring PlantPen+ becomes a household name for sustainable stationery.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-green-50 p-8 rounded-xl shadow-lg border border-green-200">
+                        <div class="text-5xl mb-4 text-green-600">🏢</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">B2B Bulk Orders</h3>
+                        <p class="text-gray-700">Schools, colleges, universities, and corporate CSR initiatives for eco-friendly bundles.</p>
+                    </div>
+                    <div class="bg-green-50 p-8 rounded-xl shadow-lg border border-green-200">
+                        <div class="text-5xl mb-4 text-green-600">🛍️</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">D2C Kits</h3>
+                        <p class="text-gray-700">Direct-to-consumer sales via e-commerce platforms for gifting and eco-conscious individuals.</p>
+                    </div>
+                    <div class="bg-green-50 p-8 rounded-xl shadow-lg border border-green-200">
+                        <div class="text-5xl mb-4 text-green-600">🔄</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Subscription Model</h3>
+                        <p class="text-gray-700">Monthly replacement kits or themed stationery subscriptions for recurring revenue.</p>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <!-- Placeholder for a market size or revenue projection chart -->
+                    <img src="https://placehold.co/700x400/a7f3d0/065f46?text=Market+Strategy+Chart" alt="Market Strategy Chart" class="rounded-xl shadow-2xl w-full max-w-2xl mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-green-600 to-green-800 text-white rounded-t-3xl shadow-xl mt-8">
+            <div class="container mx-auto px-6 md:px-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 drop-shadow-lg">Join the PlantPen+ Movement!</h2>
+                <p class="text-xl mb-10 max-w-3xl mx-auto opacity-90">
+                    Ready to make a difference? Partner with us, invest in a greener future, or simply learn more about PlantPen+.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="mailto:info@plantpenplus.com" class="inline-block bg-white text-green-700 hover:bg-green-100 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                        <svg class="inline-block w-5 h-5 mr-2 -mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        Email Us
+                    </a>
+                    <a href="#" class="inline-block bg-green-700 text-white border-2 border-white hover:bg-green-900 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                        <svg class="inline-block w-5 h-5 mr-2 -mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path></svg>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 px-6 md:px-12 text-center rounded-t-lg">
+        <div class="container mx-auto">
+            <p>&copy; 2025 PlantPen+. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
